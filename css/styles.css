@@ -6,6 +6,7 @@
   --border: #e7e9fc;
 }
 
+/* Базові скидання */
 *,
 *::before,
 *::after {
@@ -44,12 +45,7 @@ img {
   height: auto;
 }
 
-.header-container,
-.hero-container,
-.features-container,
-.team-container,
-.portfolio-container,
-.footer-container {
+.container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -81,13 +77,16 @@ img {
   margin-right: 76px;
 }
 
-.logo-accent {
+.logo-span {
   color: var(--title-color);
 }
 
 .nav-list {
   display: flex;
-  gap: 40px;
+}
+
+.nav-list li:not(:last-child) {
+  margin-right: 40px;
 }
 
 .nav-link {
@@ -105,13 +104,16 @@ img {
   color: #404bbf;
 }
 
-.header-address {
+.site-address {
   font-style: normal;
 }
 
-.contact-list {
+.address-list {
   display: flex;
-  gap: 40px;
+}
+
+.address-list li:not(:last-child) {
+  margin-right: 40px;
 }
 
 .contact-link {
@@ -188,7 +190,7 @@ img {
   width: calc((100% - 72px)/4);
 }
 
-.features-subtitle {
+.feature-title {
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -197,7 +199,7 @@ img {
   color: var(--title-color);
 }
 
-.features-text {
+.feature-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: .02em;
@@ -252,7 +254,6 @@ img {
   color: var(--text-color);
 }
 
-/* ===== PORTFOLIO ===== */
 .portfolio-section {
   padding: 120px 0;
 }
